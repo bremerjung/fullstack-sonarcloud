@@ -13,4 +13,11 @@ class CalculationServiceTest {
         assertTrue(1==actual);
     }
 
+    @Test
+    void testAddConditional_case2() {
+        CalculationService calculationService = new CalculationService();
+        Integer actual = calculationService.addConditional(2, 1);
+        assertTrue(3==actual);
+    }
+
 }
